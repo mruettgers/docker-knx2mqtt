@@ -1,0 +1,24 @@
+# One of 'error', 'warn', 'info', 'verbose', debug', 'silly'
+loglevel: 'warn'
+# One of value-only, full
+#    value-only - converts any known group addresses to its value
+#    full - a json object containing value. Additionally also name and unit type for known group addresses.
+messageType: full
+# Ignore unknown group addresses
+ignoreUnknownGroupAddresses: false
+knx:
+    # ETS exported group addresses
+    etsExport: 'group-addresses.xml'
+    # Configuration passed to the KNX library
+    options:
+        ipAddr: 10.4.32.104
+        ipPort: 3671
+mqtt:
+    # URL to MQTT broker
+    url: 'mqtt://mosquitto'
+    # Configuration passed to the MQTT library
+    #options:
+    #    username: 'mqtt_username'
+    #    password: 'mqtt_password'
+    # Prefix to mqtt topic
+    topicPrefix: 'knx'
