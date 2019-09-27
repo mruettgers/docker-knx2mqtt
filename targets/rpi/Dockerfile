@@ -23,6 +23,6 @@ COPY files/ /
 
 WORKDIR "/opt/knx2mqtt"
 
-CMD [ "npm run start" ]
+CMD [ "npm", "run", "start"]
 
 
